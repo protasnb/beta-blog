@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Show</title>
+  </head>
+  <body>
+    <h1>Here is the article</h1>
+    <p>
+      Title: <%= @article.title %><br/>
+      Content: <%= @article.description %>
+    </p>
+    <%= link_to "Back to articles listing", articles_path %>
+  </body>
+</html>
