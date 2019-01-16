@@ -1,0 +1,115 @@
+$navbar-default-bg: #134472e3;
+@import "bootstrap-sprockets";
+@import "bootstrap";
+#logo {
+    float: left;
+    font-size: 1.7em;
+    color: rgb(10, 9, 9);
+    text-transform: uppercase;
+    letter-spacing: -1px;
+  
+}
+
+#logo:hover {
+    color: rgb(150, 29, 75);
+    text-decoration: none;
+}
+
+.center {
+    text-align: center;
+}
+
+.jumbotron {
+    background-image: asset-url('paper.png');
+    background-size: cover;
+    height: 320px;
+}
+
+.jumbotron h1 {
+    color: rgb(75, 64, 64);
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: -1px;
+
+}
+
+.btn-xlarge {
+    font-size: 1.7em;
+    background-color: black;
+}
+
+footer {
+    margin-top: 45px;
+    padding-top: 5px;
+    border-top: 1px solid #eaeaea;
+    color: #777;
+}
+
+footer a:hover {
+    color: #222;
+}
+
+footer small {
+    float: left;
+}
+
+footer ul {
+    float: right;
+    list-style: none;
+}
+
+footer ul li {
+    float: left;
+    margin-left: 15px;
+}
+
+.article-actions {
+    border-top: 1px solid #eaeaea;
+    padding-top: 5px;
+}
+
+.description {
+    margin-top: 0;
+}
+
+.article-title {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.article-body {
+    border-top: 1px solid #eaeaea;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.article-meta-details {
+    border-top: 1px solid #eaeaea;
+    margin-top: 15px;
+}
+
+.listing {
+    list-style: none;
+    padding-left: 0;
+}
+
+.badge {
+    background-color: #CEF6F5;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    font-weight: bold;
+}
+
+.input_checkbox input {
+    width: auto !important;
+}
+
+#arti:hover {
+    color: rgb(150, 29, 75);
+    font-size: 1em;
+}
+
+#arti {
+    color: rgb(10, 9, 9);
+    font-size: 1em;
+}
