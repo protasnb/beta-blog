@@ -7,7 +7,6 @@ $navbar-default-bg: #134472e3;
     color: rgb(10, 9, 9);
     text-transform: uppercase;
     letter-spacing: -1px;
-  
 }
 
 #logo:hover {
@@ -22,7 +21,7 @@ $navbar-default-bg: #134472e3;
 .jumbotron {
     background-image: asset-url('paper.png');
     background-size: cover;
-    height: 320px;
+    height: 450px;
 }
 
 .jumbotron h1 {
@@ -30,12 +29,11 @@ $navbar-default-bg: #134472e3;
     text-align: center;
     margin-bottom: 30px;
     letter-spacing: -1px;
-
 }
 
 .btn-xlarge {
     font-size: 1.7em;
-    background-color: black;
+    background-color: rgb(63, 110, 170);
 }
 
 footer {
