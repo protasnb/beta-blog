@@ -16,7 +16,6 @@ class UsersController < ApplicationController
             session[:user_id] = @user.id
             flash[:success] = "Welcome to the Beta Blog #{@user.username}!"
             redirect_to user_path(@user)
-
         else
             render 'new'
         end
@@ -25,11 +24,10 @@ class UsersController < ApplicationController
     def update
         if @user.update(user_params)
             flash[:success] = "Your account was successfully updated"
-            # redirect_to user_path(@user)
-            redirect_to users_path
+            redirect_to user_path(@user)
         else
             flash[:danger] = "User was not updated"
-            redirect_to users_path
+            render 'edit'
         end
     end
 
@@ -52,7 +50,7 @@ class UsersController < ApplicationController
     end
 
     def require_same_user
-        if current_user != @user #&& !current_user.admin?
+        if current_user != @user && !current_user.admin?
             flash[:danger] = "You can only edit your own account"
             redirect_to root_path
         end
